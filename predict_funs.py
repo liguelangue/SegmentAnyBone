@@ -207,3 +207,4 @@ def evaluate_1_volume_withattention(image_vol,model,device,slice_id=None,target_
         pred = pred[:,1,:,:]
     ori_img = inverse_normalize(imgs.cpu()[0])
     return ori_img,pred,voxel_spacing,Pil_img,slice_id
+
